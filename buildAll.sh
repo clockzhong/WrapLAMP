@@ -26,7 +26,7 @@ pushd ${MysqlInstallingPath}
 ##	sudo bin/mysqld_safe --user=mysql &
 
 #add this symbol link file to fix a building bug in PHP 
-popd ${MysqlInstallingPath}/lib
+pushd ${MysqlInstallingPath}/lib
 	sudo ln -s ./libmysqlclient.so ./libmysqlclient_r.so
 popd
 
