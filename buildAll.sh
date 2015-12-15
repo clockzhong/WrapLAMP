@@ -40,8 +40,15 @@ pushd ./Apache
 	make
 	make install
 popd
-
 echo Apache building done
+
+echo Start to build php
+pushd ./Php
+	./configure --with-apxs2=${ApacheInstallingPath}/bin/apxs --prefix=${PhpInstallingPath} --with-pdo-mysql --with-mysql=${MysqlInstallingPath}
+	make
+	make install	
+popd
+echo Php Building done
 
 
 
