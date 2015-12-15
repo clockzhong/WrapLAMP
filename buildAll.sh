@@ -24,7 +24,14 @@ pushd ${MysqlInstallingPath}
 	sudo chown -R mysql data
 ## This mysql server start is optional
 ##	sudo bin/mysqld_safe --user=mysql &
+
+#add this symbol link file to fix a building bug in PHP 
+popd ${MysqlInstallingPath}/lib
+	sudo ln -s ./libmysqlclient.so ./libmysqlclient_r.so
 popd
+
+popd 
+
 echo Configuration on MYSQL done
 
 
@@ -40,6 +47,7 @@ pushd ./Apache
 	make
 	make install
 popd
+
 echo Apache building done
 
 echo Start to build php

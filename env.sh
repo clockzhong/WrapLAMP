@@ -1,9 +1,10 @@
 #!/bin/bash
 
-SoftwarePath=~/Work
-CurrentPath=`pwd`
+export SoftwarePath=~/Work/Software
+export CurrentPath=`pwd`
 echo CurrentPath:${CurrentPath}
 
-MysqlInstallingPath=${SoftwarePath}/Software/Mysql
-
+export MysqlInstallingPath=${SoftwarePath}/Mysql
+export ApacheInstallingPath=${SoftwarePath}/Apache
+export PhpInstallingPath=${SoftwarePath}/Php
 
