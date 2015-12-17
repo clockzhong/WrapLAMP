@@ -58,6 +58,11 @@ pushd ./Php
 popd
 echo Php Building done
 
+#Copy the customized configuration files to apache
+cp ./utilities/httpd.conf  ${ApacheInstallingPath}/conf
+#copy the PHP test page to apche
+cp ./utilities/test.php  ${ApacheInstallingPath}/htdocs
+
 
 
 
