@@ -1,0 +1,1 @@
+A project for LAMP(Linux, Apache, MySql and PHP) which could help you automatically build from pure source codes and deploy the service onto your Linux Cloud server with one script. And because of the full source codes access for MySQL, PHP and Apache, so you could customize these 3 modules on source-codes level, and get the feedback at once.
